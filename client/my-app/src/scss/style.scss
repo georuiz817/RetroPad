@@ -38,7 +38,7 @@ min-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: pink;
-    border: solid black;
+    border: solid thin black;
     text-align:center;
     overflow: auto;
    
@@ -54,3 +54,7 @@ min-width: 100%;
 }
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////
+.Address-list-screen li{
+    margin-left: 5px;
+}

@@ -12,8 +12,8 @@ function App() {
       <div className="container">
         <Switch>
           <Route exact path='/' component={MainScreen} />
-          <Route exact path='addressView' component={AddressViewComp} />
-          <Route exact path='weather' component={WeatherComp} />
+          <Route exact path='/addressView' component={AddressViewComp} />
+          <Route exact path='/weather' component={WeatherComp} />
         </Switch>
       </div>
     </Router>

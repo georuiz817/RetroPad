@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, } from 'react-bootstrap';
 import { useHistory } from 'react-router';
+import Footer from '../../presentationals/Footer'
 
 const AddressNew = () => {
 
@@ -47,7 +48,8 @@ const AddressNew = () => {
                 </form>
 
             </div>
-      </Container>
+            <Footer/>
+        </Container>
       </div>
         )
   }

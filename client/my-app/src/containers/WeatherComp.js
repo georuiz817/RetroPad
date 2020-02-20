@@ -1,3 +1,5 @@
+/*
+
 import React, { useState, useEffect} from 'react';
 
 const WeatherComp = () => {
@@ -24,3 +26,5 @@ useEffect(() =>
 
 
 export default WeatherComp
+
+*/

@@ -12,7 +12,7 @@ const MainScreen = () => {
                     
                         <Col>
                         <Link to="/addressView">
-                            <span>📞</span>
+                            <span role='img' aria-label='#'>📞</span>
                             <br></br>
                             <span>Address</span>
                         </Link>
@@ -20,7 +20,7 @@ const MainScreen = () => {
                      
 
                     <Col>
-                        <span>📝</span>
+                        <span role='img' aria-label='#'>📝</span>
                         <br></br>
                         <span>Memo Pad</span>
                     </Col>
@@ -32,14 +32,14 @@ const MainScreen = () => {
                 <Row>
                     <Col>
                         <Link to='weather'>
-                            <span>❄️</span>
+                            <span role='img' aria-label='#'>❄️</span>
                             <br></br>
                             <span>Weather</span>
                             </Link>
                     </Col>
 
                     <Col>
-                        <span>🖩</span>
+                        <span role='img' aria-label='#'>🖩</span>
                         <br></br>
                         <span>Calculator</span>
                      </Col> 

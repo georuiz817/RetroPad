@@ -1,10 +1,12 @@
 import React, { useState, useEffect} from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import Footer from '../presentationals/Footer'
+import { Container, Row, } from 'react-bootstrap';
+import Footer from '../../presentationals/Footer'
+import { Link } from 'react-router-dom';
 
 const AddressViewComp = () => {
 
   const [Addresses, setAddresses] = useState([]);
+
 
   useEffect(() => {
     fetch('http://localhost:3000/addresses')
@@ -15,9 +17,9 @@ const AddressViewComp = () => {
    return (
             <div  className="Address-list-screen">
               <Container>
-                <p id="address-title">Addresses <span id="add">+</span></p> 
+                <p id="address-title">Addresses <span id="add"><Link to='addressNew'>+</Link></span></p> 
                   <Row>
-                    {Addresses.map(contact => <div key={contact.id}><ul><li>{contact.first_name} {contact.last_name}</li></ul></div>)}
+                    {Addresses.map(address => <div key={address.id}><ul><Link to={`/AddressShow/${address.id}`}><li>{address.first_name} {address.last_name}</li></Link></ul></div>)}
                   </Row>
               <Footer/>
               </Container>

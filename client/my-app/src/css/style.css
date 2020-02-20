@@ -42,7 +42,8 @@ body {
 
 #address-title {
   text-decoration: underline;
-  margin-top: 5px; }
+  margin-top: 5px;
+  text-align: center; }
 
 #add {
   float: right;

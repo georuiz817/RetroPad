@@ -15,7 +15,7 @@ useEffect(() =>
 
   return (
             <div>
-            <p>{weather.text}</p>
+            <p> </p>
 
             </div>
  

@@ -1,0 +1,27 @@
+body{
+border: 10px lightblue solid;
+border-top-width: 100%;
+border-bottom-width: 100%;
+border-left-width: 500px;
+border-right-width: 500px;
+color: black;
+
+} 
+
+
+
+.container{
+    height: 400px;
+    width: 200px;    
+    overflow: auto;
+    
+}
+
+.col{
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px black;
+    background-color: pink;
+    border: solid black;
+    text-align:center;
+    
+}

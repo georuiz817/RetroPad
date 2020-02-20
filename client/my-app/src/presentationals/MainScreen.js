@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const MainScreen = () => {
     return (
-        <div className='screen'>
+        <div className="screen">
             <Container>
             
                 <Row>
@@ -44,8 +44,9 @@ const MainScreen = () => {
                      </Col> 
                 </Row>
             
-            
+
             </Container>
+
         </div>
  
     )

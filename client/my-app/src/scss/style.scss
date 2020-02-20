@@ -1,6 +1,6 @@
 html {
     margin: 0px;
-    background-color: lightblue;
+    background-color:  lightblue;
     min-width: 1000px;
     min-height: 100px;
     //border: 30px solid darkgray;
@@ -21,7 +21,7 @@ min-width: 100%;
 
 } 
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 .container{
@@ -29,7 +29,7 @@ min-width: 100%;
     width: 200px;    
     background-color: #E6E6FA;
     border: solid black;
-    
+    position: relative;
     
     
 }
@@ -43,4 +43,14 @@ min-width: 100%;
     overflow: auto;
    
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.nav{
+    position: absolute; 
+    bottom: 0;
+    font-size: small;
+    border-top: solid thin;
+    border-top-color: orange;
+}
+
 

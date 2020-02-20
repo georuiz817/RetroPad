@@ -5,15 +5,15 @@ import MainScreen from './presentationals/MainScreen'
 import AddressViewComp from './containers/AddressViewComp'
 import WeatherComp from './containers/WeatherComp'
 
+
 function App() {
   return (
     <Router>
       <div className="container">
         <Switch>
-        <Route exact path='/' component={MainScreen} />
-        <Route exact path='addressView' component={AddressViewComp} />
-        <Route exact path='weather' component={WeatherComp} />
-
+          <Route exact path='/' component={MainScreen} />
+          <Route exact path='addressView' component={AddressViewComp} />
+          <Route exact path='weather' component={WeatherComp} />
         </Switch>
       </div>
     </Router>

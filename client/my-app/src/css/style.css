@@ -19,7 +19,8 @@ body {
   height: 400px;
   width: 200px;
   background-color: #E6E6FA;
-  border: solid black; }
+  border: solid black;
+  position: relative; }
 
 .col {
   margin-top: 20px;
@@ -28,3 +29,10 @@ body {
   border: solid black;
   text-align: center;
   overflow: auto; }
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  font-size: small;
+  border-top: solid thin;
+  border-top-color: orange; }

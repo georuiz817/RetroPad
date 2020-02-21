@@ -24,11 +24,12 @@ body {
 
 .col {
   margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: pink;
-  border: solid thin black;
+  margin-bottom: 30px;
+  border-right: solid thin black;
   text-align: center;
-  overflow: auto; }
+  overflow: auto;
+  border-bottom: black solid thin;
+  background-color: pink; }
 
 .nav {
   position: absolute;
@@ -48,3 +49,10 @@ body {
 #add {
   float: right;
   font-size: 20px; }
+
+.Address-list-screen {
+  overflow: hidden; }
+
+.showAddress {
+  font-size: small;
+  border-color: none; }

@@ -36,12 +36,14 @@ min-width: 100%;
 
 .col{
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: pink;
-    border: solid thin black;
+    margin-bottom: 30px;
+   // background-color: pink;
+    border-right: solid thin black;
     text-align:center;
     overflow: auto;
-   
+    border-bottom: black solid thin;
+    background-color: pink;
+    
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -70,3 +72,12 @@ min-width: 100%;
     font-size: 20px;
 }
 
+.Address-list-screen{
+    overflow: hidden;
+}
+
+
+.showAddress{
+    font-size: small;
+    border-color: none;
+}

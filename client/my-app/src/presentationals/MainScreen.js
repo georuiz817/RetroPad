@@ -20,7 +20,7 @@ const MainScreen = () => {
                      
 
                     <Col>
-                    <Link to='/MemoNew'>
+                    <Link to='/MemoIndex'>
                         <span role='img' aria-label='#'>📝</span>
                         <br></br>
                         <span>Memo Pad</span>

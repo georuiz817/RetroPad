@@ -13,14 +13,19 @@ const MemoIndex = () => {
     .then(res => res.json())
     .then(setMemos) 
    }, []);
+
+ 
    
    return (
             <div  className="Memo-list-screen">
               <Container>
                 <p id="memo-title">Memos<span id="add"><Link to='MemoNew'>+</Link></span></p> 
                   <Row>
-                    {Memos.map(memo => <div className="mapClass" key={memo.id}><ul><Link to={`/MemoShow/${memo.id}`}><li>{memo.title}</li></Link></ul></div>)}
+                    <ul>
+                     {Memos.map(memo => <div className="mapClass" key={memo.id}><ul><Link to={`/MemoShow/${memo.id}`}><li>{memo.title}</li></Link></ul></div>)}
+                     </ul>
                   </Row>
+                  
               <Footer/>
               </Container>
             </div>

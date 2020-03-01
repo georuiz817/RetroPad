@@ -1,7 +1,7 @@
 import React, { useState, useEffect} from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Footer from '../../presentationals/Footer'
-import { Link } from 'react-router-dom';
+import ToDoNew from './ToDoNew'
 
 const ToDoIndex = () => {
 
@@ -18,8 +18,11 @@ const ToDoIndex = () => {
    
    return (
             <div  className="To-Do-list-screen">
+              
               <Container>
-                <p id="memo-title">To Dos<span id="add"><Link to='ToDoNew'>+</Link></span></p> 
+              
+                <p id="memo-title">To Dos</p> 
+                <ToDoNew />
                   <Row>
                     <ul>
                      {ToDos.map(toDo => <div className="mapClass" key={toDo.id}><ul><li>{toDo.task}</li></ul></div>)}

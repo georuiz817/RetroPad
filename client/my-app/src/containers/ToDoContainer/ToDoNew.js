@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
-import { Container, } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import Footer from '../../presentationals/Footer'
+
  
 
 const ToDoNew = () => {
@@ -33,7 +32,7 @@ const ToDoNew = () => {
     
   return (
       <div>
-      <Container>
+     
         
             <div>
                 <form className="form-bar" onSubmit={handleSubmit}>
@@ -42,8 +41,8 @@ const ToDoNew = () => {
                 </form>
 
             </div>
-            <Footer/>
-        </Container>
+           
+      
       </div>
         )
   }

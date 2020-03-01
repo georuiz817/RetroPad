@@ -41,9 +41,11 @@ const MainScreen = () => {
                     </Col>
 
                     <Col>
+                    <Link to='ToDoIndex'>
                         <span role='img' aria-label='#'>✏️</span>
                         <br></br>
                         <span>To Do list</span>
+                    </Link>
                      </Col> 
                 </Row>
             

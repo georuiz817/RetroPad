@@ -37,8 +37,6 @@ const MemoShow = (props) => {
               
                 <p>{Memo.note}</p>
                 <hr></hr>
-                <span>Delete:</span>
-                <br></br>
                 <button onClick={deleteMemo}><span role='img' aria-label='trash'>🗑️</span></button>
 
          

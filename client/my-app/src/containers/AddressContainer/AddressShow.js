@@ -41,8 +41,6 @@ const AddressShow = (props) => {
                 <hr></hr>
                 <p>Email: <br></br> {Address.email}</p>
                 <hr></hr>
-                <span>Delete:</span>
-                <br></br>
                 <button onClick={deleteAddress}><span role='img' aria-label='trash'>🗑️</span></button>
 
          

@@ -9,6 +9,7 @@ import MemoNew from './containers/MemoContainer/MemoNew'
 import MemoIndex from './containers/MemoContainer/MemoIndex'
 import MemoShow from './containers/MemoContainer/MemoShow'
 import ToDoNew from './containers/ToDoContainer/ToDoNew'
+import ToDoIndex from './containers/ToDoContainer/ToDoIndex'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/MemoIndex' component={MemoIndex} />
           <Route exact path='/memoShow/:id' component={MemoShow} /> 
           <Route exact path='/ToDoNew' component={ToDoNew}/>
+          <Route exact path='/ToDoIndex' component={ToDoIndex} />
         </Switch>
       </div>
     </Router>

@@ -41,9 +41,9 @@ const MainScreen = () => {
                     </Col>
 
                     <Col>
-                        <span role='img' aria-label='#'>🖩</span>
+                        <span role='img' aria-label='#'>✏️</span>
                         <br></br>
-                        <span>Calculator</span>
+                        <span>To Do list</span>
                      </Col> 
                 </Row>
             

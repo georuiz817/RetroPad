@@ -13,7 +13,7 @@ const AddressShow = (props) => {
         fetch('http://localhost:3000/addresses/' + id)
         .then(res => res.json())
         .then(setAddress) 
-       }, []);
+       }, [props.match.params.id]);
 
 
     let  deleteAddress = (e) => {
@@ -43,7 +43,7 @@ const AddressShow = (props) => {
                 <hr></hr>
                 <span>Delete:</span>
                 <br></br>
-                <button onClick={deleteAddress}>🗑️</button>
+                <button onClick={deleteAddress}><span role='img' aria-label='trash'>🗑️</span></button>
 
          
                 </Col>

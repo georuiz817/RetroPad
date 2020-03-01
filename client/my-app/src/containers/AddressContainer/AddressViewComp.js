@@ -19,7 +19,7 @@ const AddressViewComp = () => {
               <Container>
                 <p id="address-title">Addresses <span id="add"><Link to='addressNew'>+</Link></span></p> 
                   <Row>
-                    {Addresses.map(address => <div key={address.id}><ul><Link to={`/AddressShow/${address.id}`}><li>{address.first_name} {address.last_name}</li></Link></ul></div>)}
+                    {Addresses.map(address => <div className="mapClass" key={address.id}><ul><Link to={`/AddressShow/${address.id}`}><li>{address.first_name} {address.last_name}</li></Link></ul></div>)}
                   </Row>
               <Footer/>
               </Container>

@@ -8,6 +8,7 @@ import AddressShow from './containers/AddressContainer/AddressShow';
 import MemoNew from './containers/MemoContainer/MemoNew'
 import MemoIndex from './containers/MemoContainer/MemoIndex'
 import MemoShow from './containers/MemoContainer/MemoShow'
+import ToDoNew from './containers/ToDoContainer/ToDoNew'
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           <Route exact path='/MemoNew' component={MemoNew}/>
           <Route exact path='/MemoIndex' component={MemoIndex} />
           <Route exact path='/memoShow/:id' component={MemoShow} /> 
-
+          <Route exact path='/ToDoNew' component={ToDoNew}/>
         </Switch>
       </div>
     </Router>

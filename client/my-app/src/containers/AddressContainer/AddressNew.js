@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
-import { Container, } from 'react-bootstrap';
+import { Container,Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import Footer from '../../presentationals/Footer'
+ 
  
 
 const AddressNew = () => {
@@ -37,7 +37,7 @@ const AddressNew = () => {
   return (
       <div>
       <Container>
-        
+        <Col>
             <div>
                 <form className="form-bar" onSubmit={handleSubmit}>
                 <input type="text" value={first_name} placeholder="First name" name="firstName" onChange={(e) => setFirstName(e.target.value)}/>
@@ -46,11 +46,11 @@ const AddressNew = () => {
                 <input type="text" value={house} placeholder="home #" name="house" onChange={(e) => setHouse(e.target.value)}/>
                 <input type="text" value={email} placeholder="email" name="house" onChange={(e) => setEmail(e.target.value)}/>
                 
-                <input class="btn btn-warning" type="submit" value="Create dish!" />
+                <input class="btn btn-warning" type="submit" value="Add" />
                 </form>
 
             </div>
-     
+            </Col>
         </Container>
       </div>
         )

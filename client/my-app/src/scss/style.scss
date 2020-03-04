@@ -1,23 +1,29 @@
 //universals
-@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+@font-face { 
+    font-family: 'Bangers';
+    src:url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+}
 
 html {
     margin: 0px;
     background-color:  lightblue;
     min-width: 1000px;
-    min-height: 100px;} 
+    min-height: 100px;
+    body{
+        border: 10px lightblue solid;
+        border-top-width: 100%;
+        border-bottom-width: 100%;
+        border-left-width: 500px;
+        border-right-width: 500px;
+        color: black;
+        margin: 0px;
+        min-height: 100%;
+        min-width: 100%;
+        } 
+    } 
 
-body{
-border: 10px lightblue solid;
-border-top-width: 100%;
-border-bottom-width: 100%;
-border-left-width: 500px;
-border-right-width: 500px;
-color: black;
-margin: 0px;
-min-height: 100%;
-min-width: 100%;
-font-family: 'Bangers', cursive;} 
+
 
 .container{
     height: 400px;
@@ -26,21 +32,41 @@ font-family: 'Bangers', cursive;}
     overflow:  auto;
     border: solid thin black  ;
     max-height: 400px;
-    
+    color:  	#568203;
+    font-family: 'Bangers', cursive;
+    .col{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border: solid thin black;
+        text-align:center;
+        background-color: pink;
+        font-size: small;
+        min-height: 40px;
+     }
+     #add{
+        float: right;
+        font-size: 20px;
+    }
+    .heading-title{
+        text-decoration: underline;
+        margin-top: 5px ;
+        text-align: center;
+    }
+    .list-off{
+        border-bottom: solid thin orange;
+        text-align: left;
+        margin-left: -10%;
+        text-decoration: none;
+      }
 }
 
-.col{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    border: solid thin black;
-    text-align:center;
-    background-color: pink;
- }
-
-#add{
-    float: right;
-    font-size: 20px;
+.clock{
+    margin-left: 5%;
 }
+
+
+
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -50,37 +76,39 @@ font-family: 'Bangers', cursive;}
     font-size: small;
     border: solid thin black;
     background-color: #E6E6FA ;
-}
+    #battery{
+        margin-left: 1500%;
+    }
+  }
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
-// AddressViewComp.js
 
-.heading-title{
-    text-decoration: underline;
-    margin-top: 5px ;
-    text-align: center;
-}
-
-.list-off{
-  border-bottom: solid thin orange;
-  text-align: left;
-  margin-left: -10%;
-  text-decoration: none;
-}
-
-//////////////////////////////////////////////////////////////////////////////////////////////
 
 //AddressShow.js 
 
-.showAddress{
+.show-details{
     font-size: small;
     border-color: none;
+    
 }
 
+////////////////
+//Task containers 
 
+.task{
+   input{
+       display: inline;
+       
+   }
+}
  
- .clock{
-     margin-left: 5%;
- }
+#task-button{
+    width: 30%;
+    font-size: small;;
+}
+
+#actual-task{
+    width: 70%;
+}

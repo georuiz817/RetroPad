@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import { Container, } from 'react-bootstrap';
 import { useHistory } from 'react-router';
-import Footer from '../../presentationals/Footer'
+
 
 
 const MemoNew = () => {

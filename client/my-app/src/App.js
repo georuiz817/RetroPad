@@ -11,6 +11,7 @@ import MemoShow from './containers/MemoContainer/MemoShow'
 import ToDoNew from './containers/ToDoContainer/ToDoNew'
 import ToDoIndex from './containers/ToDoContainer/ToDoIndex'
 import Footer from './presentationals/Footer'  
+import About from './presentationals/About'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
           <Route exact path='/memoShow/:id' component={MemoShow} /> 
           <Route exact path='/ToDoNew' component={ToDoNew}/>
           <Route exact path='/ToDoIndex' component={ToDoIndex} />
-        </Switch>
+          <Route exact path='/About' component={About}/>
+          </Switch>
         <Footer/>
       </div>
     </Router>

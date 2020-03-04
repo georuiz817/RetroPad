@@ -19,6 +19,10 @@ const Footer = () => {
       </Nav.Item>
       </div>
 
+      <Nav.Item>
+      <span  role='img' aria-label='#' id="battery">🔋</span>
+      </Nav.Item>
+
      
      
 

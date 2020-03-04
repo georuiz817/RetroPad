@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container,  Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import About from '../presentationals/About'
 
 const MainScreen = () => {
     return (
@@ -45,6 +45,16 @@ const MainScreen = () => {
                         <span>To Do list</span>
                     </Link>
                      </Col> 
+
+
+                     <Col>
+                     <Link to='About'>
+                         <span role='img' aria-label='#'>⚠️</span>
+                         <br></br>
+                         <span>About</span>
+                     </Link>
+                     
+                     </Col>
             
            
            

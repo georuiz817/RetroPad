@@ -10,7 +10,7 @@ const ToDoNew = () => {
     let handleSubmit = (e) =>{
         
         e.preventDefault();
-        
+    
         fetch('http://localhost:3000/todos',
         {
             method: 'post', 
@@ -22,7 +22,7 @@ const ToDoNew = () => {
         })
           .then(res => res.json());
           
-      }
+    }
        
       
     
@@ -30,12 +30,11 @@ const ToDoNew = () => {
       <div>
      
         
-            <div>
+            <div className='tasker'>
                 <form className="form-bar" onSubmit={handleSubmit}>
-                <input type="text" value={task} placeholder="task" name="task" onChange={(e) => setTask(e.target.value)}/>
-                <input class="btn btn-warning" type="submit" value="Add Task!" />
+                <input id="actual-task" type="text" value={task} placeholder="task" name="task" onChange={(e) => setTask(e.target.value)}/>
+                <input id="task-button" class="btn btn-warning" type="submit" value="Add" />
                 </form>
-
             </div>
            
       

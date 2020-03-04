@@ -21,12 +21,12 @@ const ToDoIndex = () => {
               
               <Container>
               
-                <p id="memo-title">To Dos</p> 
+                <p className='heading-title'>To Dos</p> 
                 <ToDoNew />
                   <Row>
                     <ul>
-                     {ToDos.map(toDo => <div className="mapClass" key={toDo.id}><ul><li>{toDo.task}</li></ul></div>)}
-                     </ul>
+                     {ToDos.map(toDo => <div className="mapClass" key={toDo.id}><li>{toDo.task}</li></div>)}
+                    </ul>
                   </Row>
                   
               <Footer/>

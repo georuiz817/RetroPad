@@ -1,12 +1,11 @@
+//universals
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
 html {
     margin: 0px;
     background-color:  lightblue;
     min-width: 1000px;
-    min-height: 100px;
-    //border: 30px solid darkgray;
-    //border-style: inset;
-
-}
+    min-height: 100px;} 
 
 body{
 border: 10px lightblue solid;
@@ -18,37 +17,33 @@ color: black;
 margin: 0px;
 min-height: 100%;
 min-width: 100%;
-
-} 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+font-family: 'Bangers', cursive;} 
 
 .container{
     height: 400px;
-    width: 200px;    
     background-color: #E6E6FA;
-    border: solid black;
     position: relative;
-    
-    
+    overflow:  auto;
+    border: black solid ;
+    min-height: 400px;
 }
 
 .col{
     margin-top: 20px;
     margin-bottom: 30px;
-   // background-color: pink;
-    border-right: solid thin black;
+    border: solid thin black;
     text-align:center;
-    overflow: auto;
-    border-bottom: black solid thin;
-    background-color: pink;
-    
+    background-color: pink;}
+
+#add{
+    float: right;
+    font-size: 20px;
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Footer.js 
 .nav{
-    position: absolute; 
     bottom: 0;
     font-size: small;
     border-top: solid thin;
@@ -57,26 +52,32 @@ min-width: 100%;
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
-.Address-list-screen li{
-    margin-left: 5px;
-}
 
-#address-title{
+// AddressViewComp.js
+
+.heading-title{
     text-decoration: underline;
     margin-top: 5px ;
     text-align: center;
 }
 
-#add{
-    float: right;
-    font-size: 20px;
+.list-off{
+  border-bottom: solid thin orange;
+  text-align: left;
+  margin-left: -20%;
+  text-decoration: none;
 }
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 
-
+//AddressShow.js 
 
 .showAddress{
     font-size: small;
     border-color: none;
 }
 
+
+
+
+ 

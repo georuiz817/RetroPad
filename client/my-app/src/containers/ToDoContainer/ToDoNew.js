@@ -1,15 +1,11 @@
 import React, { useState} from 'react';
-import { useHistory } from 'react-router';
 
- 
 
 const ToDoNew = () => {
 
     const [task, setTask] = useState('');
    
 
-
-    const history = useHistory();
 
     let handleSubmit = (e) =>{
         
@@ -24,8 +20,8 @@ const ToDoNew = () => {
             },   
             body: JSON.stringify({ task })
         })
-          .then(res => res.json())
-          history.push('/ToDoIndex');
+          .then(res => res.json());
+          
       }
        
       

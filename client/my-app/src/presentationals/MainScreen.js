@@ -6,9 +6,9 @@ import Footer from '../presentationals/Footer'
 const MainScreen = () => {
     return (
         <div className="screen">
-            <Container>
-            
-                <Row>
+            <Container id="screen">
+            <Footer/>
+               
                     
                         <Col>
                         <Link to="/addressView">
@@ -27,11 +27,10 @@ const MainScreen = () => {
                         </Link>
                     </Col>
 
-         
-                </Row>
+          
                  
                     
-                <Row>
+               
                     <Col>
                         <Link to='weather'>
                             <span role='img' aria-label='#'>❄️</span>
@@ -47,10 +46,9 @@ const MainScreen = () => {
                         <span>To Do list</span>
                     </Link>
                      </Col> 
-                </Row>
             
            
-               <Footer/>
+           
             </Container>
             
             

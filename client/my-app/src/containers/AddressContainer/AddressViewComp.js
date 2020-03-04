@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import Footer from '../../presentationals/Footer'
 import { Link } from 'react-router-dom';
 
@@ -15,12 +15,19 @@ const AddressViewComp = () => {
    }, []);
    
    return (
-            <div  className="Address-list-screen">
+            <div>
               <Container>
-                <p id="address-title">Addresses <span id="add"><Link to='addressNew'>+</Link></span></p> 
-                  <Row>
-                    {Addresses.map(address => <div className="mapClass" key={address.id}><ul><Link to={`/AddressShow/${address.id}`}><li>{address.first_name} {address.last_name}</li></Link></ul></div>)}
-                  </Row>
+                <p className="heading-title">Addresses <span id="add"><Link to='addressNew'>+</Link></span></p> 
+                      
+                    <ul>
+                      {Addresses.map(address =>
+                         <div key={address.id}>
+                           <Link  to={`/AddressShow/${address.id}`}>
+                             <li className="list-off">{address.first_name} {address.last_name}</li>
+                           </Link>
+                         </div>)}
+                    </ul> 
+              
               <Footer/>
               </Container>
             </div>

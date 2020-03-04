@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 import Footer from '../../presentationals/Footer'
 //import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
@@ -31,7 +31,7 @@ const AddressShow = (props) => {
     return (
         <div className="showAddress">
             <Container>
-            <Row>
+       
                 <Col>
                 <p>Name: <br></br> {Address.first_name} {Address.last_name}</p> 
                 <hr></hr>
@@ -45,7 +45,7 @@ const AddressShow = (props) => {
 
          
                 </Col>
-            </Row>
+        
 
             <Footer/>
             </Container>

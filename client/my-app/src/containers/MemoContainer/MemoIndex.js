@@ -31,7 +31,7 @@ const MemoIndex = () => {
                     </ul>
               
                   
-              <Footer/>
+        
               </Container>
             </div>
             )

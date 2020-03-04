@@ -27,8 +27,7 @@ const AddressViewComp = () => {
                            </Link>
                          </div>)}
                     </ul> 
-              
-              <Footer/>
+        
               </Container>
             </div>
             )

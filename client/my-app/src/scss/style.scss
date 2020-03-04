@@ -24,8 +24,9 @@ font-family: 'Bangers', cursive;}
     background-color: #E6E6FA;
     position: relative;
     overflow:  auto;
-    border: black solid ;
-    min-height: 400px;
+    border: solid thin black  ;
+    max-height: 400px;
+    
 }
 
 .col{
@@ -33,7 +34,8 @@ font-family: 'Bangers', cursive;}
     margin-bottom: 30px;
     border: solid thin black;
     text-align:center;
-    background-color: pink;}
+    background-color: pink;
+ }
 
 #add{
     float: right;
@@ -46,8 +48,8 @@ font-family: 'Bangers', cursive;}
 .nav{
     bottom: 0;
     font-size: small;
-    border-top: solid thin;
-    border-top-color: orange;
+    border: solid thin black;
+    background-color: #E6E6FA ;
 }
 
 
@@ -64,7 +66,7 @@ font-family: 'Bangers', cursive;}
 .list-off{
   border-bottom: solid thin orange;
   text-align: left;
-  margin-left: -20%;
+  margin-left: -10%;
   text-decoration: none;
 }
 
@@ -78,6 +80,7 @@ font-family: 'Bangers', cursive;}
 }
 
 
-
-
  
+ .clock{
+     margin-left: 5%;
+ }

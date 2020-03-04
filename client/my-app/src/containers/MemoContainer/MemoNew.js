@@ -45,7 +45,7 @@ const MemoNew = () => {
                 </form>
 
             </div>
-            <Footer/>
+  
         </Container>
       </div>
         )

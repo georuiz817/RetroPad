@@ -42,8 +42,7 @@ const MemoShow = (props) => {
          
                 </Col>
             </Row>
-
-            <Footer/>
+ 
             </Container>
 
         </div>

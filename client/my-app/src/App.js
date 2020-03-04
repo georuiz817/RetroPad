@@ -10,12 +10,13 @@ import MemoIndex from './containers/MemoContainer/MemoIndex'
 import MemoShow from './containers/MemoContainer/MemoShow'
 import ToDoNew from './containers/ToDoContainer/ToDoNew'
 import ToDoIndex from './containers/ToDoContainer/ToDoIndex'
-
+import Footer from './presentationals/Footer'  
 
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div>
+      
         <Switch>
           <Route exact path='/' component={MainScreen} />
           <Route exact path='/addressView' component={AddressViewComp} />
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/ToDoNew' component={ToDoNew}/>
           <Route exact path='/ToDoIndex' component={ToDoIndex} />
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );

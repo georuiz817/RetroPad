@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-live-clock": "^4.0.3"
+  }
+}

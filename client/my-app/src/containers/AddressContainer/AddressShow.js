@@ -46,8 +46,7 @@ const AddressShow = (props) => {
          
                 </Col>
         
-
-            <Footer/>
+ 
             </Container>
 
         </div>

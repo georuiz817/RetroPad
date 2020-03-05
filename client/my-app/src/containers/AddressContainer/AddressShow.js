@@ -32,25 +32,19 @@ const AddressShow = (props) => {
             <Container>
        
                 <Col>
-                <p>Name: <br></br> {Address.first_name} {Address.last_name}</p> 
-                <hr></hr>
-                <p>Home #: <br></br> {Address.house}</p>
-                <hr></hr>
-                <p>Mobile #: <br></br> {Address.mobile}</p>
-                <hr></hr>
-                <p>Email: <br></br> {Address.email}</p>
-                <hr></hr>
-                <button onClick={deleteAddress}><span role='img' aria-label='trash'>🗑️</span></button>
-
-         
+                    <p>Name: <br></br> {Address.first_name} {Address.last_name}</p> 
+                    <hr></hr>
+                    <p>Home #: <br></br> {Address.house}</p>
+                    <hr></hr>
+                    <p>Mobile #: <br></br> {Address.mobile}</p>
+                    <hr></hr>
+                    <p>Email: <br></br> {Address.email}</p>
+                    <hr></hr>
+                    <button onClick={deleteAddress}><span role='img' aria-label='trash'>🗑️</span></button>
                 </Col>
-        
- 
             </Container>
-
         </div>
-)
-
-}
+        )
+    }
 
 export default AddressShow

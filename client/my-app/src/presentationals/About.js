@@ -14,15 +14,10 @@ const About = () => {
                   <p>Project was intended to be used on a 100% zoom format and I apologize if you run into any layout issues.</p>
                   <p>I also encourage you to check out the README.md for setting up on your local machine</p>
                   </Col>
-
-
                 </Container>
-     
-
             </div>
- 
-        )
-  }
+          )
+        }
 
 
 export default About

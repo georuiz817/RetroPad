@@ -28,12 +28,9 @@ const MemoIndex = () => {
                         </Link>
                       </div>)}
                     </ul>
-              
-                  
-        
               </Container>
             </div>
             )
           }
 
-          export default MemoIndex
+export default MemoIndex

@@ -50,7 +50,7 @@ const AddressNew = () => {
                 </form>
 
             </div>
-            </Col>
+        </Col>
         </Container>
       </div>
         )

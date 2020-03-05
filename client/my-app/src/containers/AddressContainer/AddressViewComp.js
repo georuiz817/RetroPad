@@ -32,4 +32,4 @@ const AddressViewComp = () => {
             )
           }
 
-          export default AddressViewComp
+export default AddressViewComp

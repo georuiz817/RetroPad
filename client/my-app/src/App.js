@@ -10,14 +10,16 @@ import MemoIndex from './containers/MemoContainer/MemoIndex'
 import MemoShow from './containers/MemoContainer/MemoShow'
 import ToDoNew from './containers/ToDoContainer/ToDoNew'
 import ToDoIndex from './containers/ToDoContainer/ToDoIndex'
+import ToDoShow from './containers/ToDoContainer/ToDoShow'
 import Footer from './presentationals/Footer'  
 import About from './presentationals/About'
+import Error from './presentationals/Error'
+
 
 function App() {
   return (
     <Router>
       <div>
-      
         <Switch>
           <Route exact path='/' component={MainScreen} />
           <Route exact path='/addressView' component={AddressViewComp} />
@@ -28,8 +30,10 @@ function App() {
           <Route exact path='/memoShow/:id' component={MemoShow} /> 
           <Route exact path='/ToDoNew' component={ToDoNew}/>
           <Route exact path='/ToDoIndex' component={ToDoIndex} />
+          <Route exact path='/ToDoShow/:id' component={ToDoShow}/>
           <Route exact path='/About' component={About}/>
-          </Switch>
+          <Route component={Error} />
+        </Switch>
         <Footer/>
       </div>
     </Router>

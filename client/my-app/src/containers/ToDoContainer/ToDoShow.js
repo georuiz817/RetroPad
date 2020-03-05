@@ -3,25 +3,25 @@ import { Container, Row, Col } from 'react-bootstrap';
 //import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
 
-const MemoShow = (props) => {
-    const [Memo, setMemo] = useState({});
+const ToDoShow = (props) => {
+    const [ToDo, setToDo] = useState({});
     const history = useHistory();
     
     useEffect(() => {
         let id = props.match.params.id;
-        fetch('http://localhost:3000/memos/' + id)
+        fetch('http://localhost:3000/todos/' + id)
         .then(res => res.json())
-        .then(setMemo) 
+        .then(setToDo) 
        }, [props.match.params.id]);
 
 
-    let  deleteMemo = (e) => {
+    let  deleteToDo = (e) => {
             e.preventDefault()
             let id = props.match.params.id;
-            fetch('http://localhost:3000/memos/' + id, {
+            fetch('http://localhost:3000/todos/' + id, {
               method: "DELETE" 
             })
-            history.push('/MemoIndex')
+            history.push('/ToDoIndex')
         } 
     
        
@@ -32,15 +32,15 @@ const MemoShow = (props) => {
             <Container>
                 <Row>
                     <Col>
-                    <p><u>{Memo.title}</u></p>
-                    <p>{Memo.note}</p>
-                    <hr></hr>
-                    <button onClick={deleteMemo}><span role='img' aria-label='trash'>🗑️</span></button>
+                        <p><u>{ToDo.task}</u></p>
+                        <hr></hr>
+                        <button onClick={deleteToDo}><span role='img' aria-label='trash'>🗑️</span></button>
                     </Col>
                 </Row>
             </Container>
+
         </div>
         )
     }
 
-export default MemoShow
+export default ToDoShow

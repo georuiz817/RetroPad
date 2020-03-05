@@ -5,31 +5,24 @@ import Clock from 'react-live-clock';
  
 
 const Footer = () => {
-  
       return (
             <div className="nav">
-   
-      <Nav.Item>
-        <Link to='/'><span role='img' aria-label='#'>🏠</span></Link> 
-      </Nav.Item>
-
-      <div className="clock">
-      <Nav.Item>
-      <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Eastern'} />
-      </Nav.Item>
-      </div>
-
-      <Nav.Item>
-      <span  role='img' aria-label='#' id="battery">🔋</span>
-      </Nav.Item>
-
-     
-     
-
+                  <Nav.Item>
+                        <Link to='/'><span role='img' aria-label='#'>🏠</span></Link> 
+                  </Nav.Item>
+                  
+                  <div className="clock">
+                        <Nav.Item>
+                              <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Eastern'} />
+                        </Nav.Item>
+                  </div>
+                  
+                  <Nav.Item>
+                        <span  role='img' aria-label='#' id="battery">🔋</span>
+                  </Nav.Item>
             </div>
- 
-        )
-  }
+            )
+      }
 
 
 export default Footer

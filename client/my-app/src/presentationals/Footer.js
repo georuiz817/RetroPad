@@ -10,17 +10,22 @@ const Footer = () => {
                   <Nav.Item>
                         <Link to='/'><span role='img' aria-label='#'>🏠</span></Link> 
                   </Nav.Item>
-                  
+                  |
+
+                  <Nav.Item>
+                        <span  role='img' aria-label='#' id="battery">🔋</span>
+                  </Nav.Item>
+                  |
                   <div className="clock">
                         <Nav.Item>
                               <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Eastern'} />
                         </Nav.Item>
                   </div>
-                  
-                  <Nav.Item>
-                        <span  role='img' aria-label='#' id="battery">🔋</span>
-                  </Nav.Item>
-            </div>
+                  |
+                        <Nav.Item>
+                              <span>Retro Pad® </span>
+                        </Nav.Item>
+             </div>
             )
       }
 

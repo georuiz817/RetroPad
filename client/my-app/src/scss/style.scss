@@ -11,7 +11,7 @@ html {
     min-width: 1000px;
     min-height: 100px;
     body{
-        border: 10px lightblue solid;
+        border: 10px   lightblue solid;
         border-top-width: 100%;
         border-bottom-width: 100%;
         border-left-width: 500px;
@@ -32,14 +32,14 @@ html {
     overflow:  auto;
     border: solid thin black  ;
     max-height: 400px;
-    color:  	#568203;
+    color: 	black;
     font-family: 'Bangers', cursive;
     .col{
         margin-top: 20px;
         margin-bottom: 30px;
         border: solid thin black;
         text-align:center;
-        background-color: pink;
+        background-color: #F8DED7;
         font-size: small;
         min-height: 40px;
      }
@@ -60,11 +60,19 @@ html {
       }
 }
 
-.clock{
-    margin-left: 5%;
+.form-control{
+    margin-bottom: 2%;
 }
 
 
+.clock{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.screen span{
+    font-size: 20px;
+}
 
 
 
@@ -76,9 +84,11 @@ html {
     font-size: small;
     border: solid thin black;
     background-color: #E6E6FA ;
-    #battery{
-        margin-left: 1500%;
-    }
+  }
+
+  .nav-item{
+      margin-left: 5%;
+      margin-right: 5%;
   }
 
 

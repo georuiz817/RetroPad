@@ -26,7 +26,7 @@ const ToDoIndex = () => {
           <ul>
             {ToDos.map(toDo => 
               <div className="mapClass" key={toDo.id}>
-                <Link to={`/TodoShow/${toDo.id}`}>  
+                <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to={`/TodoShow/${toDo.id}`}>  
                   <li>{toDo.task}</li> 
                 </Link>
               </div>)}

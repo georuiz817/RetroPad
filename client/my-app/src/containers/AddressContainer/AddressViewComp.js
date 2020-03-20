@@ -16,12 +16,12 @@ const AddressViewComp = () => {
    return (
             <div>
               <Container>
-                <p className="heading-title">Addresses <span id="add"><Link to='addressNew'>+</Link></span></p> 
+                <p className="heading-title">Addresses <span id="add"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='addressNew'>+</Link></span></p> 
                       
                     <ul>
                       {Addresses.map(address =>
                          <div key={address.id}>
-                           <Link  to={`/AddressShow/${address.id}`}>
+                           <Link style={{ color: 'inherit', textDecoration: 'inherit'}}  to={`/AddressShow/${address.id}`}>
                              <li className="list-off">{address.first_name} {address.last_name}</li>
                            </Link>
                          </div>)}

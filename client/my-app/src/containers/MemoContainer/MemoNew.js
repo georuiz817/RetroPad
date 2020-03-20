@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { Container, } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 
@@ -35,17 +35,18 @@ const MemoNew = () => {
   return (
       <div>
       <Container>
-        
-            <div>
+        <Col>
+            <p className="heading-title"> Add Memo</p>
+            <div className="form-group">
                 <form className="form-bar" onSubmit={handleSubmit}>
-                <input type="text" value={title} placeholder="Memo Title" name="firstName" onChange={(e) => setTitle(e.target.value)}/>
-                <textarea type="text" value={note} placeholder="Memo Text" name="firstName" onChange={(e) => setNote(e.target.value)}/>
+                <input className="form-control" type="text" value={title} placeholder="Memo Title" name="firstName" onChange={(e) => setTitle(e.target.value)}/>
+                <textarea className="form-control" type="text" value={note} placeholder="Memo Text" name="firstName" onChange={(e) => setNote(e.target.value)}/>
                 
-                <input class="btn" type="submit" value="Create Memo!" />
+                <input className="btn btn-warning" type="submit" value="Create Memo!" />
                 </form>
 
             </div>
-  
+         </Col>
         </Container>
       </div>
         )

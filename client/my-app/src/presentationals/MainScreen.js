@@ -8,7 +8,7 @@ const MainScreen = () => {
         <div className="screen">
             <Container id="screen">
                 <Col>
-                    <Link to="/addressView">
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/addressView">
                         <span role='img' aria-label='#'>📞</span>
                         <br></br>
                         <span>Address</span>
@@ -16,23 +16,15 @@ const MainScreen = () => {
                 </Col>
                 
                 <Col>
-                    <Link to='/MemoIndex'>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='/MemoIndex'>
                         <span role='img' aria-label='#'>📝</span>
                         <br></br>
                         <span>Memo Pad</span>
                     </Link>
                 </Col>
-                
-                <Col>
-                    <Link to='weather'>
-                        <span role='img' aria-label='#'>❄️</span>
-                        <br></br>
-                        <span>Weather</span>
-                    </Link>
-                </Col>
 
                 <Col>
-                    <Link to='ToDoIndex'>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='ToDoIndex'>
                         <span role='img' aria-label='#'>✏️</span>
                         <br></br>
                         <span>To Do list</span>
@@ -41,7 +33,7 @@ const MainScreen = () => {
 
 
                 <Col>
-                    <Link to='About'>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='About'>
                         <span role='img' aria-label='#'>⚠️</span>
                         <br></br>
                         <span>About</span>

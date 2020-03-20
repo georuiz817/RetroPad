@@ -28,9 +28,9 @@ const ToDoNew = () => {
     
   return (
       <div>
-        <div className='tasker'>
+        <div className="form-group">
           <form className="form-bar" onSubmit={handleSubmit}>
-            <input id="actual-task" type="text" value={task} placeholder="task" name="task" onChange={(e) => setTask(e.target.value)}/>
+            <input className="form-control" id="actual-task" type="text" value={task} placeholder="task" name="task" onChange={(e) => setTask(e.target.value)}/>
             <input id="task-button" class="btn btn-warning" type="submit" value="Add" />
           </form>
         </div>

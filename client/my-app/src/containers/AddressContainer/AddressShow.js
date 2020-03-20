@@ -21,9 +21,9 @@ const AddressShow = (props) => {
             fetch('http://localhost:3000/addresses/' + id, {
               method: "DELETE" 
             })
-            history.push('/addressView')
-        } 
-    
+            .then((history.push('/addressView')))
+          } 
+        
        
 
 

@@ -18,12 +18,12 @@ const MemoIndex = () => {
    return (
             <div>
               <Container>
-                <p className="heading-title">Memos<span id="add"><Link to='MemoNew'>+</Link></span></p> 
+                <p className="heading-title">Memos<span id="add"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='MemoNew'>+</Link></span></p> 
              
                     <ul>
                      {Memos.map(memo => 
                       <div key={memo.id}>
-                        <Link to={`/MemoShow/${memo.id}`}>
+                        <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to={`/MemoShow/${memo.id}`}>
                           <li className="list-off">{memo.title}</li>
                         </Link>
                       </div>)}

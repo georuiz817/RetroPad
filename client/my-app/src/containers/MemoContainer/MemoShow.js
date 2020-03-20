@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Col } from 'react-bootstrap';
 //import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
 
@@ -30,14 +30,14 @@ const MemoShow = (props) => {
     return (
         <div className="show-details">
             <Container>
-                <Row>
+      
                     <Col>
                     <p><u>{Memo.title}</u></p>
                     <p>{Memo.note}</p>
                     <hr></hr>
                     <button onClick={deleteMemo}><span role='img' aria-label='trash'>🗑️</span></button>
                     </Col>
-                </Row>
+            
             </Container>
         </div>
         )

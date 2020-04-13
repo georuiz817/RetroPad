@@ -2,40 +2,36 @@ import React, { useState} from 'react';
 import { Container,Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
  
- 
-
-const AddressNew = () => {
+ const AddressNew = () => {
 
     const [first_name, setFirstName] = useState('');
     const [last_name, setLastName] = useState('');
     const [mobile, setMobile] = useState('');
     const [house, setHouse] = useState('');
     const [email, setEmail] = useState('');
-
-
     const history = useHistory();
 
-    let handleSubmit = (e) =>{
-        
-        e.preventDefault();
-        
-        fetch('http://localhost:3000/addresses',
-        {
-            method: 'post', 
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },   
-            body: JSON.stringify({ first_name, last_name, mobile, house, email })
-        })
+    let handleSubmit = (e) => {
+      e.preventDefault();
+      fetch('http://localhost:3000/addresses', {
+              method: 'post',
+              headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                  first_name,
+                  last_name,
+                  mobile,
+                  house,
+                  email
+              })
+          })
           .then(history.push('/addressView'))
-      }
-       
-      
-    
+  }
+  
   return (
-      <div>
-      <Container>
+    <Container>
         <Col>
             <p className="heading-title"> Add Address</p>
             <div className="form-group">
@@ -48,13 +44,10 @@ const AddressNew = () => {
                 <br></br><br></br>
                 <input className="btn btn-warning" type="submit" value="Add" />
                 </form>
-
             </div>
         </Col>
-        </Container>
-      </div>
-        )
+    </Container>
+    )
   }
-
 
 export default AddressNew

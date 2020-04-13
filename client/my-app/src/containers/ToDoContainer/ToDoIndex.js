@@ -6,16 +6,13 @@ import { Link } from 'react-router-dom';
 const ToDoIndex = () => {
 
   const [ToDos, setToDos] = useState([]);
-
-
+  
   useEffect(() => {
    fetch('http://localhost:3000/todos')
     .then(res => res.json())
     .then(setToDos) 
    }, []);
-
-
-
+  
    return (
     <div  className="To-Do-list-screen">
       <Container>

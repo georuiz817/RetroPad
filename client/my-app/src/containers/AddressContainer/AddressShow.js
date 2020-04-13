@@ -4,33 +4,29 @@ import { Container, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
 const AddressShow = (props) => {
+    
     const [Address, setAddress] = useState({});
     const history = useHistory();
     
     useEffect(() => {
         let id = props.match.params.id;
         fetch('http://localhost:3000/addresses/' + id)
-        .then(res => res.json())
-        .then(setAddress) 
-       }, [props.match.params.id]);
-
-
-    let  deleteAddress = (e) => {
-            e.preventDefault()
-            let id = props.match.params.id;
-            fetch('http://localhost:3000/addresses/' + id, {
-              method: "DELETE" 
+            .then(res => res.json())
+            .then(setAddress)
+    }, [props.match.params.id]);
+    
+    let deleteAddress = (e) => {
+        e.preventDefault()
+        let id = props.match.params.id;
+        fetch('http://localhost:3000/addresses/' + id, {
+                method: "DELETE"
             })
             .then((history.push('/addressView')))
-          } 
-        
-       
-
-
+    }
+    
     return (
         <div className="show-details">
             <Container>
-       
                 <Col>
                     <p>Name: <br></br> {Address.first_name} {Address.last_name}</p> 
                     <hr></hr>

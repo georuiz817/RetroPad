@@ -13,8 +13,7 @@ const ToDoShow = (props) => {
         .then(res => res.json())
         .then(setToDo) 
        }, [props.match.params.id]);
-
-
+       
     let  deleteToDo = (e) => {
             e.preventDefault()
             let id = props.match.params.id;
@@ -24,10 +23,7 @@ const ToDoShow = (props) => {
             history.push('/ToDoIndex')
         } 
     
-       
-
-
-    return (
+        return (
         <div className="show-details">
             <Container>
           

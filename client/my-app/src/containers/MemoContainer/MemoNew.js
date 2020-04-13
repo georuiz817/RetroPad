@@ -2,36 +2,29 @@ import React, { useState} from 'react';
 import { Container, Col } from 'react-bootstrap';
 import { useHistory } from 'react-router';
 
-
-
 const MemoNew = () => {
 
     const [title, setTitle] = useState('');
     const [note, setNote] = useState('');
-
-
-
     const history = useHistory();
 
-    let handleSubmit = (e) =>{
-        
-        e.preventDefault();
-        
-        fetch('http://localhost:3000/memos',
-        {
-            method: 'post', 
-            headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-            },   
-            body: JSON.stringify({ title, note })
-        })
+    let handleSubmit = (e) => {
+      e.preventDefault();
+      fetch('http://localhost:3000/memos', {
+              method: 'post',
+              headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                  title,
+                  note
+              })
+          })
           .then(res => res.json())
-          history.push('/MemoIndex');
-      }
-       
-      
-    
+      history.push('/MemoIndex');
+  }
+  
   return (
       <div>
       <Container>
@@ -51,6 +44,5 @@ const MemoNew = () => {
       </div>
         )
   }
-
 
 export default MemoNew

@@ -23,10 +23,7 @@ const MemoShow = (props) => {
             })
             history.push('/MemoIndex')
         } 
-    
-       
-
-
+        
     return (
         <div className="show-details">
             <Container>

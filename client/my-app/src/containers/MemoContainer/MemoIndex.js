@@ -6,16 +6,13 @@ const MemoIndex = () => {
 
   const [Memos, setMemos] = useState([]);
 
-
   useEffect(() => {
     fetch('http://localhost:3000/memos')
-    .then(res => res.json())
-    .then(setMemos) 
-   }, []);
-
- 
-   
-   return (
+        .then(res => res.json())
+        .then(setMemos)
+  }, []);
+  
+  return (
             <div>
               <Container>
                 <p className="heading-title">Memos<span id="add"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to='MemoNew'>+</Link></span></p> 
@@ -30,7 +27,7 @@ const MemoIndex = () => {
                     </ul>
               </Container>
             </div>
-            )
-          }
+          )
+        }
 
 export default MemoIndex

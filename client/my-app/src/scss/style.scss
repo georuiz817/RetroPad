@@ -1,124 +1,16 @@
-//universals
+@import './MainScreen.scss';
+@import './Footer.scss';
+@import './Error.scss';
+@import './About.scss';
 
-@font-face { 
-    font-family: 'Bangers';
-    src:url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+html, body{
+    background-color: lightblue;
 }
 
-html {
-    margin: 0px;
-    background-color:  lightblue;
-    min-width: 1000px;
-    min-height: 100px;
-    body{
-        border: 10px   lightblue solid;
-        border-top-width: 100%;
-        border-bottom-width: 100%;
-        border-left-width: 500px;
-        border-right-width: 500px;
-        color: black;
-        margin: 0px;
-        min-height: 100%;
-        min-width: 100%;
-        } 
-    } 
-
-
-
-.container{
-    height: 400px;
-    background-color: #E6E6FA;
-    position: relative;
-    overflow:  auto;
-    border: solid thin black  ;
-    max-height: 400px;
-    color: 	black;
-    font-family: 'Bangers', cursive;
-    .col{
-        margin-top: 20px;
-        margin-bottom: 30px;
-        border: solid thin black;
-        text-align:center;
-        background-color: #F8DED7;
-        font-size: small;
-        min-height: 40px;
-     }
-     #add{
-        float: right;
-        font-size: 20px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Outer-Screen{
+        margin-left: 35%;
+        width: 30%;
     }
-    .heading-title{
-        text-decoration: underline;
-        margin-top: 5px ;
-        text-align: center;
-    }
-    .list-off{
-        border-bottom: solid thin orange;
-        text-align: left;
-        margin-left: -10%;
-        text-decoration: none;
-      }
-}
-
-.form-control{
-    margin-bottom: 2%;
-}
-
-
-.clock{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.screen span{
-    font-size: 20px;
-}
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//Footer.js 
-.nav{
-    bottom: 0;
-    font-size: small;
-    border: solid thin black;
-    background-color: #E6E6FA ;
-  }
-
-  .nav-item{
-      margin-left: 5%;
-      margin-right: 5%;
-  }
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-//AddressShow.js 
-
-.show-details{
-    font-size: small;
-    border-color: none;
-    
-}
-
-////////////////
-//Task containers 
-
-.task{
-   input{
-       display: inline;
-       
-   }
-}
- 
-#task-button{
-    width: 30%;
-    font-size: small;;
-}
-
-#actual-task{
-    width: 70%;
-}
+} 

@@ -10,12 +10,3 @@
   border-bottom: solid thin black;
   text-align: center;
   background-color: #F8DED7; }
-
-html, body {
-  background-color: lightblue; }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .Outer-Screen {
-    margin-left: 35%;
-    width: 30%; } }
